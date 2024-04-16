@@ -1,0 +1,222 @@
+:root {
+  --color1: #944e63;
+  --color2: #b47b84;
+  --color3: #caa6a6;
+  --color4: #ffe7e7;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+button {
+  cursor: pointer;
+}
+
+header {
+  width: 100%;
+  padding: 2rem;
+
+  background-color: var(--color1) !important;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  place-items: center;
+  z-index: 1;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+header section:first-child {
+  display: flex;
+  place-content: center;
+  place-items: center;
+  gap: 1rem;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+header section:first-child button {
+  color: #ccc;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  transition: 250ms;
+  padding: 1rem;
+  padding-bottom: 0.5rem;
+  font-weight: bold;
+
+  /* display: flex;
+    place-content: center;
+    place-items: center; */
+
+  background-color: transparent;
+}
+
+header section:first-child button:hover {
+  background-color: #9ac8cd;
+  color: white;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+header h1 {
+  color: var(--color3);
+  color: #00104a;
+  text-shadow: 5px 2px 1px white;
+
+  font-size: 4rem;
+  font-family: "Christmas Is Coming";
+}
+
+header h4 {
+  font-family: "Christmas Is Coming";
+  font-size: 1.3rem;
+  color: #6c0345;
+  text-shadow: 1px 1px 1px #000;
+}
+
+#header-place {
+  height: 40rem;
+  width: 100%;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+
+  padding: 2rem;
+
+  background-image: url("./images/thought-catalog-qkCTQFXidV8-unsplash.jpg");
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* backdrop-filter: blur(degree-of-blur); */
+
+  /* background-color: rgba(255, 255, 255, 0.4); */
+
+  /* -webkit-backdrop-filter: blur(5px); */
+  overflow: hidden;
+  z-index: -1;
+  /* filter: blur(0.2px); */
+}
+
+main::after {
+  content: "";
+  width: 100%;
+  height: 140%;
+
+  background: inherit;
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  filter: blur(3px);
+
+  rotate: 15deg;
+}
+
+main section {
+  color: #fff;
+  position: relative;
+  z-index: 2;
+
+  /* width: 70%; */
+
+  position: absolute;
+  top: 140%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: #b00035c6;
+  border-radius: 1rem;
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  place-items: center;
+  gap: 1rem;
+}
+
+main section button {
+  background-image: linear-gradient(180deg, white, gray);
+  color: #4a0016;
+  font-weight: bold;
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 80%;
+  border: none;
+  transition: border 250ms;
+}
+
+main section button:hover {
+  background-image: linear-gradient(180deg, white, white);
+  border: 3px solid black;
+}
+
+#test-text {
+  background-color: #fff;
+  color: #000;
+  padding: 1rem;
+  font-size: 1.5rem;
+  border-radius: inherit;
+  width: 80%;
+}
+
+#test-text textarea {
+  border: none;
+  border-radius: inherit;
+  width: 100%;
+  height: 5rem;
+  padding: 0.5rem;
+  color: #00104a;
+}
+
+main section h3 {
+  font-size: 1.5rem;
+  color: black;
+}
+
+main section #settings {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-content: center;
+  place-items: start;
+  gap: 1rem;
+  color: navy;
+}
+
+main section #settings .two-cells {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* place-content: center; */
+  /* place-items: center; */
+  gap: 1rem;
+
+  background-color: #fec7b4;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+main section #settings .two-cells :last-child {
+  place-self: end;
+}
+
+/* main section #settings h5 {
+  border-bottom: 5px solid red;
+  width: 10rem;
+} */
+
+/* main section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+main section p {
+  /* color: red; */
+}
